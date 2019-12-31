@@ -5,8 +5,12 @@ import android.util.Log;
 import android.view.View;
 import android.widget.Toast;
 
+import androidx.test.espresso.Espresso;
 import androidx.test.espresso.NoMatchingViewException;
 import androidx.test.espresso.ViewAssertion;
+import androidx.test.espresso.action.ViewActions;
+import androidx.test.espresso.assertion.ViewAssertions;
+import androidx.test.espresso.matcher.ViewMatchers;
 import androidx.test.filters.LargeTest;
 import androidx.test.rule.ActivityTestRule;
 import androidx.test.runner.AndroidJUnit4;
@@ -29,7 +33,7 @@ import static androidx.test.espresso.matcher.ViewMatchers.withText;
 
 @RunWith(AndroidJUnit4.class)
 @LargeTest
-public class BtnTest {
+public class ITSchoolSamsungTest {
     private String stringToBetyped;
     private int salt = new Random().nextInt(999);
     private String result =salt+",TEST1:OK";;
